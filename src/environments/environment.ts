@@ -3,7 +3,15 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  firebase: {
+    apiKey: 'AIzaSyAxFOSWJDWwMVbHLek-N9mSKTz2GFP1L64',
+    authDomain: 'quinela-indigo.firebaseapp.com',
+    databaseURL: 'https://quinela-indigo.firebaseio.com',
+    projectId: 'quinela-indigo',
+    storageBucket: 'quinela-indigo.appspot.com',
+    messagingSenderId: '987700587473'
+  }
 };
 
 /*

@@ -1,0 +1,119 @@
+<table class="table text-center">
+  <thead>
+    <tr>
+      <th scope="col">Cuartos de final</th>
+      <th scope="col">Semifinales</th>
+      <th scope="col">Tercer puesto</th>
+      <th scope="col">Final</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td *ngIf="partidos[0]">
+        {{partidos[0].equipo1}} 
+        <img class="flag" [src]="'assets/img/'+partidos[0].equipo1+'.png'" *ngIf="partidos[0].equipo1 != ''"> 
+        <span class="font-weight-bold">{{partidos[0].marcador}}</span> 
+        <img class="flag" [src]="'assets/img/'+partidos[0].equipo2+'.png'" *ngIf="partidos[0].equipo2 != ''"> {{partidos[0].equipo2}}
+        <div>Anota Primero {{partidos[0].anotaPrimero}}</div>
+        <div *ngIf="partidos[0].penales">{{partidos[0].ganador}} gana en penales {{partidos[0].marcadorPenales}}</div>
+        <div *ngIf="partidos[0].empate && !partidos[0].penales">Gana {{partidos[0].ganador}}</div>
+      </td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td *ngIf="partidos[1]">
+        {{partidos[1].equipo1}}
+        <img class="flag" [src]="'assets/img/'+partidos[1].equipo1+'.png'" *ngIf="partidos[1].equipo1 != ''">
+        <span class="font-weight-bold">{{partidos[1].marcador}}</span>
+        <img class="flag" [src]="'assets/img/'+partidos[1].equipo2+'.png'" *ngIf="partidos[1].equipo2 != ''"> {{partidos[1].equipo2}}
+        <div>Anota Primero {{partidos[1].anotaPrimero}}</div>
+        <div *ngIf="partidos[1].penales">{{partidos[1].ganador}} gana en penales {{partidos[1].marcadorPenales}}</div>
+        <div *ngIf="partidos[1].empate && !partidos[1].penales">Gana {{partidos[1].ganador}}</div>
+      </td>
+      <td *ngIf="partidos[4]">
+        {{partidos[4].equipo1}}
+        <img class="flag" [src]="'assets/img/'+partidos[4].equipo1+'.png'" *ngIf="partidos[4].equipo1 != ''">
+        <span class="font-weight-bold">{{partidos[4].marcador}}</span>
+        <img class="flag" [src]="'assets/img/'+partidos[4].equipo2+'.png'" *ngIf="partidos[4].equipo2 != ''"> {{partidos[4].equipo2}}
+        <div>Anota Primero {{partidos[4].anotaPrimero}}</div>
+        <div *ngIf="partidos[4].penales">{{partidos[4].ganador}} gana en penales {{partidos[4].marcadorPenales}}</div>
+        <div *ngIf="partidos[4].empate && !partidos[4].penales">Gana {{partidos[4].ganador}}</div>
+      </td>
+      <td *ngIf="partidos[6]">
+        {{partidos[6].equipo1}}
+        <img class="flag" [src]="'assets/img/'+partidos[6].equipo1+'.png'" *ngIf="partidos[6].equipo1 != ''">
+        <span class="font-weight-bold">{{partidos[6].marcador}}</span>
+        <img class="flag" [src]="'assets/img/'+partidos[6].equipo2+'.png'" *ngIf="partidos[6].equipo2 != ''"> {{partidos[6].equipo2}}
+        <div>Anota Primero {{partidos[6].anotaPrimero}}</div>
+        <div *ngIf="partidos[6].penales">{{partidos[6].ganador}} gana en penales {{partidos[6].marcadorPenales}}</div>
+        <div *ngIf="partidos[6].empate && !partidos[6].penales">Gana {{partidos[6].ganador}}</div>
+      </td>
+      <td *ngIf="partidos[7]">
+        {{partidos[7].equipo1}}
+        <img class="flag" [src]="'assets/img/'+partidos[7].equipo1+'.png'" *ngIf="partidos[7].equipo1 != ''">
+        <span class="font-weight-bold">{{partidos[7].marcador}}</span>
+        <img class="flag" [src]="'assets/img/'+partidos[7].equipo2+'.png'" *ngIf="partidos[7].equipo2 != ''"> {{partidos[7].equipo2}}
+        <div>Anota Primero {{partidos[7].anotaPrimero}}</div>
+        <div *ngIf="partidos[7].penales">{{partidos[7].ganador}} gana en penales {{partidos[7].marcadorPenales}}</div>
+        <div *ngIf="partidos[7].empate && !partidos[7].penales">Gana {{partidos[7].ganador}}</div>
+      </td>
+    </tr>
+    <tr>
+      <td *ngIf="partidos[2]">
+        {{partidos[2].equipo1}}
+        <img class="flag" [src]="'assets/img/'+partidos[2].equipo1+'.png'" *ngIf="partidos[2].equipo1 != ''">
+        <span class="font-weight-bold">{{partidos[2].marcador}}</span>
+        <img class="flag" [src]="'assets/img/'+partidos[2].equipo2+'.png'" *ngIf="partidos[2].equipo2 != ''"> {{partidos[2].equipo2}}
+        <div>Anota Primero {{partidos[2].anotaPrimero}}</div>
+        <div *ngIf="partidos[2].penales">{{partidos[2].ganador}} gana en penales {{partidos[2].marcadorPenales}}</div>
+        <div *ngIf="partidos[2].empate && !partidos[2].penales">Gana {{partidos[2].ganador}}</div>
+      </td>
+      <td *ngIf="partidos[5]">
+        {{partidos[5].equipo1}}
+        <img class="flag" [src]="'assets/img/'+partidos[5].equipo1+'.png'" *ngIf="partidos[5].equipo1 != ''">
+        <span class="font-weight-bold">{{partidos[5].marcador}}</span>
+        <img class="flag" [src]="'assets/img/'+partidos[5].equipo2+'.png'" *ngIf="partidos[5].equipo2 != ''"> {{partidos[5].equipo2}}
+        <div>Anota Primero {{partidos[5].anotaPrimero}}</div>
+        <div *ngIf="partidos[5].penales">{{partidos[5].ganador}} gana en penales {{partidos[5].marcadorPenales}}</div>
+        <div *ngIf="partidos[5].empate && !partidos[5].penales">Gana {{partidos[5].ganador}}</div>
+      </td>
+    </tr>
+    <tr>
+      <td *ngIf="partidos[3]">
+        {{partidos[3].equipo1}}
+        <img class="flag" [src]="'assets/img/'+partidos[3].equipo1+'.png'" *ngIf="partidos[3].equipo1 != ''">
+        <span class="font-weight-bold">{{partidos[3].marcador}}</span>
+        <img class="flag" [src]="'assets/img/'+partidos[3].equipo2+'.png'" *ngIf="partidos[3].equipo2 != ''"> {{partidos[3].equipo2}}
+        <div>Anota Primero {{partidos[3].anotaPrimero}}</div>
+        <div *ngIf="partidos[3].penales">{{partidos[3].ganador}} gana en penales {{partidos[3].marcadorPenales}}</div>
+        <div *ngIf="partidos[3].empate && !partidos[3].penales">Gana {{partidos[3].ganador}}</div>
+      </td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="table text-center">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Nombre</th>
+      <th scope="col">Puntos</th>
+      <th scope="col">Predicciones</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let participante of participantes; let i = index">
+      <th scope="row">{{i}}</th>
+      <td>{{participante.nombre}}</td>
+      <td>{{participante.puntos}}</td>
+      <td>
+        <button [routerLink]="['/predic',participante.id]" type="button" class="btn btn-primary btn-sm">Ver</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
